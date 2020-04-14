@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-02-14 01:15:07 "/>
+        <attribute name="created" value="dXNlcjtOT1RFLUFOQTsyMDIwLTAyLTE0OyIwMTowNTowOSAiOzIxOTE="/>
+        <attribute name="edited" value="dXNlcjtOT1RFLUFOQTsyMDIwLTAyLTE0OyIwMToxNTowNyAiOzE7MjI5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ol&#225;! Por favor, insira suas notas: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1 + nota2 + nota3 + nota4)/4"/>
+            <output expression="&quot;Sua m&#233;dia &#233;: &quot; &amp; media" newline="True"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! Voc&#234; passou! &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o passou. Continue estudando. &quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <output expression="&quot;At&#233; mais! &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

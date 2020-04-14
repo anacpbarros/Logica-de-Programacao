@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-02-14 02:31:22 "/>
+        <attribute name="created" value="dXNlcjtOT1RFLUFOQTsyMDIwLTAyLTE0OyIwMToxNToxOCAiOzIxOTI="/>
+        <attribute name="edited" value="dXNlcjtOT1RFLUFOQTsyMDIwLTAyLTE0OyIwMjozMToyMiAiOzE7MjI5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, limite" type="Integer" array="False" size=""/>
+            <declare name="aprender" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Vamos aprender a tabuada do 5? &quot;" newline="True"/>
+            <input variable="aprender"/>
+            <if expression="aprender">
+                <then>
+                    <output expression="&quot;Vamos come&#231;ar.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Que pena! Te espero uma pr&#243;xima vez. &quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <assign variable="numero" expression="0"/>
+            <assign variable="limite" expression="10"/>
+            <while expression="numero&lt;=limite">
+                <output expression="&quot;5 x &quot; &amp; numero &amp; &quot; = &quot; &amp; 5*numero" newline="True"/>
+                <assign variable="numero" expression="numero+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

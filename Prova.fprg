@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-02-14 01:05:05 "/>
+        <attribute name="created" value="dXNlcjtOT1RFLUFOQTsyMDIwLTAyLTE0OyIxMjoyNTozMiAiOzIxOTE="/>
+        <attribute name="edited" value="dXNlcjtOT1RFLUFOQTsyMDIwLTAyLTE0OyIwMTowNTowNSAiOzE7MjI5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sexo" type="String" array="False" size=""/>
+            <declare name="prova" type="Boolean" array="False" size=""/>
+            <declare name="idade, nota" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ol&#225;! Por favor, digite o seu nome: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Qual o seu sexo? &quot;" newline="True"/>
+            <input variable="sexo"/>
+            <output expression="&quot;Qual a sua idade? &quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Realizou a prova? &quot;" newline="True"/>
+            <input variable="prova"/>
+            <if expression="prova">
+                <then/>
+                <else>
+                    <output expression="&quot;Para continuar &#233; necess&#225;rio realizar a prova. &quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <output expression="&quot;Qual a sua nota? &quot;" newline="True"/>
+            <input variable="nota"/>
+            <if expression="nota &gt;= 7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! Voc&#234; passou! &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Estude mais, e tente novamente. &quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Nome: &quot; &amp; nome &amp; &quot; &quot; &amp;&#13;&#10;&quot;Sexo: &quot; &amp; sexo &amp; &quot; &quot; &amp;&#13;&#10;&quot;Idade: &quot; &amp; idade &amp; &quot; &quot; &amp;&#13;&#10;&quot;Nota: &quot; &amp; nota" newline="True"/>
+            <output expression="&quot;At&#233; mais! &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
